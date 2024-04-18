@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller TypeScript 2</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1
+      style="
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 10px 50px;
+        background-color: cornflowerblue;
+      "
+    >
+      TV series
+    </h1>
+    <div class="container">
+      <div class="row">
+        <div class="col" style="width: 50%">
+          <table id="tabla_series" class="table border">
+            <thead class="thead-dark">
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Channel</th>
+                <th>Seasons</th>
+              </tr>
+            </thead>
+            <tbody id="series"></tbody>
+          </table>
+          <div class="row justify-content-start">
+            <h5>Seasons average:</h5>
+            <h5 id="average-seasons"></h5>
+          </div>
+        </div>
+        <div class="col" style="width: 50%">
+          <div class="card">
+            <div class="card-body">
+              <img
+                style="width: 100%; max-height: 450px"
+                id="imagen_serie"
+                src="https://img.freepik.com/premium-vector/retro-tv-with-color-frame-icon-problem-television-chanell-illustration-symbol-sign-tv-rainbow-vector_744955-490.jpg"
+                alt="Imagen de la serie"
+              />
+              <div id="titulo_serie" class="h3 p-3">Nombre de la serie</div>
+              <div class="col">
+                <p id="descripcion_serie">Descripcion de la serie</p>
+              </div>
+              <div class="col">
+                <a
+                  id="enlace_serie"
+                  href="https://uniandes.edu.co"
+                  target="_blank"
+                  >Enlace al streaming de la serie</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/scripts/main.js"></script>
+  </body>
+</html>
